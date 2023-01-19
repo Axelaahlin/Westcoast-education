@@ -4,7 +4,6 @@ import { v4 as uuidv4 } from 'uuid';
 
 import GeneralContext from "../../store/general-context";
 
-
 const AddCourse = () => {
   const context = useContext(GeneralContext)
 
@@ -49,7 +48,6 @@ const AddCourse = () => {
     window.location.reload()
   }
 
-  
   return (
       <form>
         <h3>Registrera Kurs</h3>

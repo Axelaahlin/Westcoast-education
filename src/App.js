@@ -12,7 +12,6 @@ import Modal from './components/UI/Modal';
 
 import GeneralContext from './store/general-context';
 
-
 function App() {
   const context = useContext(GeneralContext)
 

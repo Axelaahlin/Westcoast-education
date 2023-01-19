@@ -1,7 +1,7 @@
 import {screen, render} from '@testing-library/react';
 import userEvent from '@testing-library/user-event'; 
-import { setupServer } from 'msw/node'
 import { rest } from 'msw'
+import { setupServer } from 'msw/node'
 
 import AddCourse from './AddCourse'
 
@@ -36,6 +36,9 @@ describe('AddCourse component', () => {
     })
   })
 
+
+  //Lämnar kvar detta test även om det inte fungerar pågrund av import
+  //har gjort mock req med jest.fn() men ville visa upp detta ändås
   describe('form interactions', () => {
     test('add a user works', async () => {
       let reqBody;
