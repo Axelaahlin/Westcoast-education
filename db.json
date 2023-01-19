@@ -1,0 +1,106 @@
+{
+  "courses": [
+    {
+      "courseName": "JavaScript 4",
+      "courseNumber": "10946",
+      "courseLength": "5 veckor",
+      "courseStartDate": "2023-02-01",
+      "courseDescription": "faucibus in ornare quam viverra orci sagittis eu volutpat odio facilisis mauris sit amet massa vitae tortor condimentum lacinia quis vel eros donec ac odio tempor orci dapibus ultrices in iaculis nunc sed augue lacus viverra vitae congue eu consequat ac felis donec et odio pellentesque diam volutpat commodo sed egestas egestas fringilla phasellus faucibus scelerisque eleifend donec pretium vulputate sapien nec sagittis aliquam malesuada bibendum arcu vitae elementum curabitur vitae nunc sed velit dignissim sodales ut eu sem integer vitae justo eget magna fermentum iaculis eu non diam phasellus vestibulum lorem sed risus ultricies tristique nulla aliquet enim tortor",
+      "id": 1
+    },
+    {
+      "courseName": "Interaktion med CMS",
+      "courseNumber": "16840",
+      "courseLength": "5 veckor",
+      "courseStartDate": "2023-02-01",
+      "courseDescription": "sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac",
+      "id": 2
+    },
+    {
+      "courseName": "JavaScript som backend-språk",
+      "courseNumber": "11294",
+      "courseLength": "5 veckor",
+      "courseStartDate": "2023-02-01",
+      "courseDescription": "sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac",
+      "id": 3
+    },
+    {
+      "courseName": "HTML och CSS",
+      "courseNumber": "64730",
+      "courseLength": "5 veckor",
+      "courseStartDate": "2023-02-01",
+      "courseDescription": "sed enim ut sem viverra aliquet eget sit amet tellus cras adipiscing enim eu turpis egestas pretium aenean pharetra magna ac placerat vestibulum lectus mauris ultrices eros in cursus turpis massa tincidunt dui ut ornare lectus sit amet est placerat in egestas erat imperdiet sed euismod nisi porta lorem mollis aliquam ut porttitor leo a diam sollicitudin tempor id eu nisl nunc mi ipsum faucibus vitae aliquet nec ullamcorper sit amet risus nullam eget felis eget nunc lobortis mattis aliquam faucibus purus in massa tempor nec feugiat nisl pretium fusce id velit ut tortor pretium viverra suspendisse potenti nullam ac",
+      "id": 4
+    },
+    {
+      "id": "32d61bcb-fdc6-4f99-a360-103df61e3926",
+      "courseName": "Axels",
+      "courseNumber": "021523",
+      "courseLength": "6 Veckor",
+      "courseStartDate": "151256-05-12",
+      "courseDescription": "Detta är en kurs"
+    }
+  ],
+  "teachers": [
+    {
+      "id": 1,
+      "firstName": "Per",
+      "lastName": "Gustafsson",
+      "PSN": "xxxxxxxxxx",
+      "email": "per.gustafsson@westcoast-edu.se",
+      "phoneNumber": "0703175029",
+      "favSubjects": [
+        "Interaktion med CMS",
+        "JavaScript som backend-språk"
+      ]
+    },
+    {
+      "id": 2,
+      "firstName": "Lena-Maria",
+      "lastName": "Berg",
+      "PSN": "xxxxxxxxxx",
+      "email": "lenamaria.berg@westcoast-edu.se",
+      "phoneNumber": "0703126036",
+      "favSubjects": [
+        "Interaktion med CMS",
+        "JavaScript som backend-språk"
+      ]
+    },
+    {
+      "id": 3,
+      "firstName": "Conny",
+      "lastName": "Rydqvist",
+      "PSN": "xxxxxxxxxx",
+      "email": "conny.rydqvist@westcoast-edu.se",
+      "phoneNumber": "0703176352",
+      "favSubjects": [
+        "JavaScript som backend-språk",
+        "Interaktion med CMS"
+      ]
+    },
+    {
+      "id": 4,
+      "firstName": "Jonas",
+      "lastName": "Högberg",
+      "PSN": "xxxxxxxxxx",
+      "email": "jonas.hogberg@westcoast-edu.se",
+      "phoneNumber": "0703777846",
+      "favSubjects": [
+        "HTML och CSS",
+        "Programmering 1"
+      ]
+    },
+    {
+      "id": 5,
+      "firstName": "Nenne",
+      "lastName": "Andersson",
+      "PSN": "xxxxxxxxxx",
+      "email": "nenne.andersson@westcoast-edu.se",
+      "phoneNumber": "0703147910",
+      "favSubjects": [
+        "JavaScript som backend-språk",
+        "Programmering 1"
+      ]
+    }
+  ]
+}

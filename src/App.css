@@ -1,38 +1,279 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;;
+
+}
+
+
+/* Heading */
+h1{
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  color:  #61DBFB;
+}
+
+h2{
+  margin-top: 50px;
+  color: #61DBFB;
+  letter-spacing: 2px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3{
+  margin-top: 20px;
+  text-align: center;
+  color: #61DBFB;
+  letter-spacing: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* page container */
+.page-container{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: column;
+  background-color: #081c33;
+  min-height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+/* Home */
+.home-preamble{
+width: 50%;
+text-align: center;
+font-size: 1.0125rem;
+color: #61DBFB;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+/* Navbar and Navigation */
+*::before{
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 8vh;
+  background-color: #081c33;
+}
+
+.nav-menu{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3rem;
+}
+
+.nav-toggler{
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggler div{
+  width: 3rem;
+  height: 0.2rem;
+  margin: 0.4rem;
+  background-color: #61DBFB;
+}
+
+@media screen and (max-width: 650px) {
+  .nav-toggler{
+    display: block;
   }
-  to {
-    transform: rotate(360deg);
+
+  .nav-menu{
+    position: fixed;
+    top: 7vh;
+    right: 0;
+    width: 100%;
+    height: 93vh;
+    background-color: #081c33;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: 0.5s ease-in-out;
   }
+}
+
+.nav-active{
+  transform: translateX(0);
+}
+
+.toggle .line1{
+  transform: rotate(-45deg) translate(-4px, 10px);
+}
+
+.toggle .line2{
+  opacity: 0;
+}
+
+.toggle .line3{
+  transform: rotate(45deg) translate(-4px, -10px);
+}
+
+
+
+/* Display */
+.display-area{
+  margin-top: 10px;
+}
+
+.display-item{
+  background-color:#61DBFB;
+  color: #081c33;
+  padding: 20px 200px 20px 40px;
+  margin: 20px 0;
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 50%;
+}
+
+
+.display-item-bold{
+  font-weight: 900;
+}
+
+.display-item a {
+  color: #081c33;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/*Links and listitem */
+a{
+  text-decoration: none;
+  color:#61DBFB;
+  font-size: 1.125rem;
+}
+
+li{
+  list-style-type: none;
+}
+
+/* Button */
+.btn{
+  margin: 10px 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  background-color:#61DBFB;
+  border-radius: 5px;
+  border: none;
+}
+
+/* Course details */
+.course-details-container{
+  max-width: 750px;
+  color: #61DBFB;
+  letter-spacing: 1px;
+  min-width: 100%
+}
+
+.course-desc{
+  border-top: 1px solid var(--darkgray);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+
+/* Forms */
+
+form{
+  margin: 10px;
+  padding: 10px;
+}
+
+
+.form-control {
+  margin: 0.8rem 0;
+}
+
+.form-control label, 
+input {
+  width: 100%;
+}
+
+.form-control label {
+  display: block;
+  font-size: 1rem;
+  color:#081c33;
+  letter-spacing: 1px;
+}
+
+.form-control input {
+  padding: 0.4rem 0.3rem;
+  border: solid 1px #081c33;
+  border-radius: 5px;
+  outline: none !important;
+  width: 50%;
+}
+
+/* Modal */
+.modal {
+  background-color:white;
+  padding: 20px ;
+  position: fixed;
+  top: 20%;
+  left: 25%;
+  width: 50%;
+  z-index: 100;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.card{
+  background-color: aqua;
+}
+
+@media screen and (max-width: 550px) {
+  .display-area{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .display-item{
+    padding: 0;
+    padding: 20px;
+    width: 100%;
+  }
+
+  .navigation li{
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+
+  .navigation li a{
+    margin: 0 15px;
+    color:#61DBFB;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .modal{
+  top: 10%;
+
+  }
+}
+
+.course-details-container{
+  display: flex;
+    flex-direction: column;
+    align-items: center;  ;
 }
